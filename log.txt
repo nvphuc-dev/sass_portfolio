@@ -1,3 +1,7 @@
 1.Create Project
     - npm init
     - npm install sass -D
+2. Create files and Create Sass scripts
+    - Create directory structure
+    - Config script compile
+    package.json: add cmd ["compile-sass": "sass assets/css/scss/app.scss assets/css/app.css --watch --no-source-map"]

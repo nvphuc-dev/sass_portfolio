@@ -4,7 +4,7 @@
   "description": "\u0016Responsive Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-sass": "sass assets/css/scss/app.scss assets/css/app.css --watch --no-source-map"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/nvphuc-dev/sass_portfolio/issues"
   },
-  "homepage": "https://github.com/nvphuc-dev/sass_portfolio#readme"
+  "homepage": "https://github.com/nvphuc-dev/sass_portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "scss-reset": "^1.2.2"
+  }
 }
