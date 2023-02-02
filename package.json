@@ -1,0 +1,19 @@
+{
+  "name": "sass_portfolio",
+  "version": "1.0.0",
+  "description": "\u0016Responsive Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvphuc-dev/sass_portfolio.git"
+  },
+  "author": "Kenvin Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nvphuc-dev/sass_portfolio/issues"
+  },
+  "homepage": "https://github.com/nvphuc-dev/sass_portfolio#readme"
+}
