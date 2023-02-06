@@ -1,0 +1,24 @@
+@use "sass:math";
+
+@mixin flexBox($x, $y) {
+	display: flex;
+	justify-content: $x;
+	align-items: $y;
+}
+
+@mixin position($name, $t, $r, $b, $l) {
+	position: $name;
+	top: $t;
+	right: $r;
+	bottom: $b;
+	left: $l;
+}
+
+@mixin columns($key) {
+	@for $i from 1 through 12 {
+		.col-#{$key}-#{$i} {
+			flex-basis: math.div(100%, 12) * $i;
+			max-width: math.div(100%, 12) * $i;
+		}
+	}
+}

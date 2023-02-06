@@ -1,3 +1,9 @@
-@import 'base/variables';
-@import 'base/_reset';
+// import base modules
+@import 'base/reset';
 @import 'base/typography';
+
+// import components module
+@import 'components/nav';
+
+// import layout module
+@import 'layout/grid';

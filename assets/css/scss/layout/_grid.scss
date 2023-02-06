@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.container {
+	width: 100%;
+	max-width: $maxWidth;
+	padding: 0 $gutter;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@each $key, $value in $breakPoints {
+	@if $key == xlg {
+		@media (min-width: $value) {
+			@include columns($key);
+		}
+	} @else {
+		@media (max-width: $value) {
+			@for $i from 1 through 12 {
+				@include columns($key);
+			}
+		}
+	}
+}

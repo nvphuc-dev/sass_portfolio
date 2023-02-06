@@ -42,7 +42,7 @@
    */
   @mixin acModeContrast {
     filter: invert(100%);
-    background-color: $white !important;
+    background-color: #fff !important;
   }
   
   /**

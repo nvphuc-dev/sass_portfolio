@@ -5,3 +5,6 @@
     - Create directory structure
     - Config script compile
     package.json: add cmd ["compile-sass": "sass assets/css/scss/app.scss assets/css/app.css --watch --no-source-map"]
+
+
+6. Responsive Grid System DONE
