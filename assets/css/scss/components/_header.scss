@@ -1,0 +1,82 @@
+@use "../abstracts" as *;
+
+.header {
+	position: relative;
+	&::after{
+		content: "";
+		width: 50%;
+		height: calc(100vh - 7rem);
+		background: url("/assets/img/pct-profile01.jpg") no-repeat center center;
+		background-size: cover;
+		@include position(absolute, 0, 0, null, null);
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0);
+		@include responsive(md) {
+			clip-path: none;
+		}
+		@include responsive(md) {
+			width: 100%;
+			height: calc(50vh - 7rem);
+		}
+	}
+	&__data {
+		width: 100%;
+		height: calc(100vh - 10rem);
+		@include flexBox(null, center);
+		@include responsive(md) {
+			height: calc(50vh - 3rem);
+			margin-top: calc(50vh - 7rem);
+			justify-content: center;
+		}
+		@include responsive(xsm) {
+			justify-content: flex-start;
+		}
+	}
+	&__contents {
+
+	}
+	&__subtitle {
+		font-size: 1.7rem;
+		font-weight: 500;
+		text-transform: capitalize;
+		color: $gray;
+		@include responsive(md) {
+			font-size: 1.6rem;
+		}
+	}
+	&__title {
+		margin-top: $gutter;
+		font-size: 4.5rem;
+		font-weight: 900;
+		background: linear-gradient(45deg, $black 50%, $green-500 50%);
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		text-transform: capitalize;
+		@include responsive(md) {
+			font-size: 4rem;
+		}
+		@include responsive(md) {
+			font-size: 3.3rem;
+			margin-top: 1rem;
+			font-weight: 800;
+		}
+		@include responsive(xsm) {
+			font-size: 3rem;
+			font-weight: 700;
+		}
+	}
+	&__des {
+		margin-top: $gutter;
+		text-transform: capitalize;
+		font-size: 1.8rem;
+		font-weight: 500;
+		color: $black;
+		@include responsive(md) {
+			margin-top: 1rem;
+			font-size: 1.7rem;
+		}
+	}
+	&__link {
+		margin-top: $gutter;
+	}
+}

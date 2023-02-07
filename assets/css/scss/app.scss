@@ -2,8 +2,15 @@
 @import 'base/reset';
 @import 'base/typography';
 
-// import components module
-@import 'components/nav';
-
 // import layout module
 @import 'layout/grid';
+
+// import components module
+@import 'components/nav';
+@import 'components/header';
+@import 'components/button';
+@import 'components/modal';
+
+// import utility module
+@import 'utils/utils';
+
