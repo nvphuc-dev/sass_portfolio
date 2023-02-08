@@ -7,4 +7,4 @@
     package.json: add cmd ["compile-sass": "sass assets/css/scss/app.scss assets/css/app.css --watch --no-source-map"]
 
 
-"9. Create Modal\4. Modal Close Icon.mp4" Done
+"14. Testimonials" Done
