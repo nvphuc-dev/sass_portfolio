@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.section-education{
+	.hdg-lv2{
+		margin-bottom: 3rem;
+	}
+	.skew-down [class^="col-"]:nth-child(2n){
+		transform: skewY(8deg);
+		@include responsive(lg){
+			transform: none;
+		}
+	}
+	.skew-up [class^="col-"]:nth-child(2n + 1){
+		transform: skewY(-8deg);
+		@include responsive(lg){
+			transform: none;
+		}
+	}
+}

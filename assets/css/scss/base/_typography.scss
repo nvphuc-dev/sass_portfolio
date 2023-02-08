@@ -38,16 +38,17 @@ textarea {
 a {
   color: #333;
   text-decoration: none;
+  cursor: pointer;
 
   &:visited {
-  outline: 0;
+    outline: 0;
   }
 
   &:focus,
   &:active,
   &:hover {
-  text-decoration: underline;
-  outline: 0;
+    text-decoration: none;
+    outline: 0;
   }
 }
 

@@ -20,6 +20,7 @@
 		.col-#{$key}-#{$i} {
 			flex-basis: math.div(100%, 12) * $i;
 			max-width: math.div(100%, 12) * $i;
+			padding: 0 1rem;
 		}
 	}
 }

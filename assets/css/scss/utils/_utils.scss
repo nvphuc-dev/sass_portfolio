@@ -25,6 +25,7 @@
 .box-image{
 	figure{
 		position: relative;
+		font-size: 0;
 		figcaption{
 			font-size: 1.3rem;
 			color: $green-400;
@@ -36,8 +37,14 @@
 
 .section{
 	padding: 8rem 0;
+	@include responsive(xsm){
+		padding: 4rem 0;
+	}
 	&--bg01{
-		background: linear-gradient(to right, $green-50 25%, $white 50%);
+		background: linear-gradient(to right, $green-100 25%, $green-100 50%);
+	}
+	&--bg02{
+		background: linear-gradient(to right, $gray-100 25%, $gray-100 50%);
 	}
 }
 
@@ -66,4 +73,67 @@
 
 .items-center{
 	align-items: center;
+}
+
+.box-card{
+	background: linear-gradient(110deg, $white 50%, $green-50 50%);
+	padding: $gutter;
+	margin-bottom: 2rem;
+	box-shadow: -3rem 3rem 2rem -3rem rgba(52, 211, 153, 0.2);
+	border-radius: .3rem;
+	&__title{
+		font-size: 1.3rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		background: linear-gradient(45deg, $black 20%, $green-500 20%);
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
+	&__block{
+		@include flexBox(null, center);
+		margin-top: $gutter;
+		span{
+			width: 3.5rem;
+			height: 3.5rem;
+			border-radius: 50%;
+			@include flexBox(center, center);
+			box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+			&.house{
+				background: $green-100;
+				i{
+					color: $green-600;
+					font-size: 1.6rem;
+				}
+			}
+			&.calendar{
+				background: $gray-200;
+				i{
+					color: $gray-700;
+					font-size: 1.6rem;
+				}
+			}
+		}
+		p{
+			font-size: 1.3rem;
+			margin-left: 1rem;
+			font-weight: 500;
+			color: $black;
+			flex: 1;
+		}
+	}
+}
+
+.lst-rating{
+	@include flexBox(null, center);
+	li{
+		i{
+			font-size: 1.2rem;
+			color: $orange;
+		}
+	}
+}
+
+.mb-0{
+	margin-bottom: 0!important;
 }
