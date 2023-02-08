@@ -1,5 +1,10 @@
 @use "../abstracts" as *;
 
+.fluid-image{
+	max-width: 100%;
+	height: auto;
+}
+
 .hdg-lv2 {
 	font-size: 2rem;
 	font-weight: 500;
@@ -15,4 +20,50 @@
 		display: inline-block;
 		@include position(absolute, 50%, null, null, 0);
 	}
+}
+
+.box-image{
+	figure{
+		position: relative;
+		figcaption{
+			font-size: 1.3rem;
+			color: $green-400;
+			text-align: center;
+			@include position(absolute, null, 1rem, 1rem, null);
+		}
+	}
+}
+
+.section{
+	padding: 8rem 0;
+	&--bg01{
+		background: linear-gradient(to right, $green-50 25%, $white 50%);
+	}
+}
+
+.lst-socials{
+	@include flexBox(flex-start, null);
+	margin-top: 2rem;
+	li{
+		&:not(:last-child){
+			margin-right: 1rem;
+		}
+		a{
+			width: 3.5rem;
+			height: 3.5rem;
+			border-radius: 50%;
+			@include flexBox(center, center);
+			background: $green-400;
+			color: $white;
+			transition: all .3s ease;
+			font-size: 1.6rem;
+			&:hover{
+				background: $black;
+			}
+		}
+	}
+}
+
+.items-center{
+	align-items: center;
 }

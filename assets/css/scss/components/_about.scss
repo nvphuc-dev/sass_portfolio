@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+
+.section-about{
+	&__contents{
+		@include responsive(md){
+			margin-top: 3rem;
+		}
+	}
+	.box-image{
+		&__photo{
+			width: 30rem;
+			height: 30rem;
+			position: relative;
+			@include responsive(lg){
+				margin: 0 auto;
+			}
+			@include responsive(md){
+				width: 25rem;
+				height: 25rem;
+			}
+			@include responsive(xsm){
+				width: 20rem;
+				height: 20rem;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 50%;
+				&.thumb{
+					width: 15rem;
+					height: 15rem;
+					border: solid .7rem $green-50;
+					@include position(absolute, -3rem, null, null, -3rem);
+					@include responsive(md){
+						width: 12rem;
+						height: 12rem;
+					}
+					@include responsive(xsm){
+						width: 10rem;
+						height: 10rem;
+					}
+				}
+			}
+		}
+	}
+	&__des{
+		font-size: 1.5rem;
+		color: $black;
+		margin-top: $gutter;
+	}
+	&__block{
+		@include flexBox(space-between, null);
+		margin-top: $gutter;
+		padding-bottom: $gutter;
+		border-bottom: .1rem dashed $gray-300;
+		span{
+			&:nth-child(1){
+				font-size: 1.4rem;
+				font-weight: 600;
+				color: $black;
+			}
+			&:nth-child(2){
+				font-size: 1.3rem;
+				font-weight: 500;
+				color: $gray-700;
+			}
+		}
+	}
+}

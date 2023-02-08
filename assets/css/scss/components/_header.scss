@@ -5,7 +5,7 @@
 	&::after{
 		content: "";
 		width: 50%;
-		height: calc(100vh - 7rem);
+		height: calc(100vh - 10rem);
 		background: url("/assets/img/pct-profile01.jpg") no-repeat center center;
 		background-size: cover;
 		@include position(absolute, 0, 0, null, null);
@@ -23,7 +23,7 @@
 		height: calc(100vh - 10rem);
 		@include flexBox(null, center);
 		@include responsive(md) {
-			height: calc(50vh - 3rem);
+			height: calc(50vh - 7rem);
 			margin-top: calc(50vh - 7rem);
 			justify-content: center;
 		}
