@@ -4,7 +4,7 @@
   "description": "\u0016Responsive Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "sass assets/css/scss/app.scss assets/css/app.css --watch --no-source-map"
+    "compile-sass": "sass assets/css/scss/app.scss assets/css/app.css --watch --no-source-map --style compressed"
   },
   "repository": {
     "type": "git",

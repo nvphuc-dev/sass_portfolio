@@ -46,6 +46,9 @@
 	&--bg02{
 		background: linear-gradient(to right, $gray-100 25%, $gray-100 50%);
 	}
+	&--bg03{
+		background: linear-gradient(to top, $white 50%, $green-50 50%);
+	}
 }
 
 .lst-socials{

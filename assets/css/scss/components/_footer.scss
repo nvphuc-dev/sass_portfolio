@@ -1,0 +1,46 @@
+@use "../abstracts" as *;
+
+.footer{
+	padding: 8rem 0 0;
+	.hdg-lv2{
+		margin-bottom: 3rem;
+	}
+	&__image{
+		width: 18rem;
+		height: 18rem;
+		padding: 0.5rem;
+		border-radius: 50%;
+		border-left: 0.6rem dotted $green-500;
+		position: relative;
+		@include responsive(md){
+			margin-bottom: 3rem;
+		}
+		img{
+			@include imageCover;
+			border-radius: 50%;
+		}
+		span{
+			@include position(absolute, 0, -9rem, null, null);
+			background: $green-500;
+			color: $white;
+			padding: 0.8rem 1.3rem;
+			font-size: 1.2rem;
+			font-weight: 500;
+			text-transform: capitalize;
+			border-top-right-radius: 50%;
+		}
+	}
+	&__copy{
+		padding: 1.3rem 0;
+		background: $gray-100;
+	}
+	&__text{
+		font-size: 1.3rem;
+		color: $gray-400;
+		text-align: center;
+		.name{
+			font-size: 1.5rem;
+			color: $gray-600;
+		}
+	}
+}
