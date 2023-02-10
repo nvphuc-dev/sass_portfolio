@@ -1,6 +1,9 @@
 @use "../abstracts" as *;
 
 .section-about{
+	@include responsive(sm){
+		padding-top: 7rem;
+	}
 	&__contents{
 		@include responsive(md){
 			margin-top: 3rem;

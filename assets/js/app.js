@@ -35,5 +35,18 @@ modalClose.addEventListener('click', () => {
 });
 
 // get current year
+const currentYear = new Date().getFullYear();
 const year = document.querySelector('.js-current-year');
-year.innerHTML = new Date().getFullYear();
+year.innerHTML = currentYear;
+
+// Number of years of experience
+const yearBasic = document.querySelector('.js-year-basic');
+yearBasic.innerHTML = currentYear - 2017;
+const yearNodejs = document.querySelector('.js-year-nodejs');
+yearNodejs.innerHTML = currentYear - 2021;
+const yearLaravel = document.querySelector('.js-year-laravel');
+yearLaravel.innerHTML = currentYear - 2020;
+const yearExperience = document.querySelector('.js-year-typescript');
+yearExperience.innerHTML = currentYear - 2021;
+const yearGit = document.querySelector('.js-year-git');
+yearGit.innerHTML = currentYear - 2019;

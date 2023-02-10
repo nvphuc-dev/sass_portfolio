@@ -140,3 +140,17 @@
 .mb-0{
 	margin-bottom: 0!important;
 }
+
+.is-visiblePc{
+	display: block;
+	@include responsive(sm){
+		display: none;
+	}
+}
+
+.is-visibleSp{
+	display: none;
+	@include responsive(sm){
+		display: block;
+	}
+}
