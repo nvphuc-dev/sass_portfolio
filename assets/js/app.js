@@ -8,6 +8,22 @@ toggle.addEventListener('click', () => {
 	toggle.classList.toggle('is-opened')
 	ul.classList.toggle('is-opened');
 });
+// add click event on li
+const liItems = document.querySelectorAll('.nav__item');
+const w = window.innerWidth;
+console.log(w);
+liItems.forEach(liItem => {
+	liItem.addEventListener('click', function (){
+		liItems.forEach(item => item.classList.remove('active'));
+		this.classList.add('active');
+		if(w <= 768){
+			body.classList.toggle('is-opened')
+			toggle.classList.toggle('is-opened')
+			ul.classList.toggle('is-opened');
+		}
+	});
+});
+
 
 // Name typewrite effect
 const nameElement = document.querySelector('.header__title');
@@ -35,9 +51,12 @@ modalClose.addEventListener('click', () => {
 });
 
 // get current year
-const currentYear = new Date().getFullYear();
-const year = document.querySelector('.js-current-year');
-year.innerHTML = currentYear;
+let currentYear = new Date().getFullYear();
+let year = document.querySelectorAll('.js-current-year');
+year.forEach(function (e){
+	e.innerHTML = currentYear;
+});
+
 
 // Number of years of experience
 const yearBasic = document.querySelector('.js-year-basic');

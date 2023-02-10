@@ -38,6 +38,9 @@
 		}
 	}
 	&__item{
+		@include responsive(sm){
+			border-bottom: solid 1px $gray-400;
+		}
 		a{
 			text-decoration: none;
 			text-transform: capitalize;
@@ -60,6 +63,7 @@
 			color: $green-500;
 			@include responsive(sm){
 				color: $black;
+				background: $white;
 			}
 		}
 		&:hover a{

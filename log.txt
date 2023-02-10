@@ -5,6 +5,8 @@
     - Create directory structure
     - Config script compile
     package.json: add cmd ["compile-sass": "sass assets/css/scss/app.scss assets/css/app.css --watch --no-source-map"]
-3. Coding...
-4. Deploy
+3. Compile [cd/ -> project]
+    npm run compile-sass
+4. Coding...
+5. Deploy
     https://main--famous-boba-a9ec36.netlify.app/
